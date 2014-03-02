@@ -1,0 +1,47 @@
+# Default Config File for 'AdvancedCL' plugin for AdvancedPVP server(s).
+# 'AdvancedCL' is currently handling all combat logs and the [/report] command.
+
+##################################
+##          COMBAT LOG          ##
+##################################
+
+# Enter Cooldown for NPC Removal in Seconds
+npc:
+  cooldown: 10
+
+# Enter Cooldown for People to be Removed from Combat List
+removal:
+  cooldown: 10
+
+# Enter a message for when a player combat logs
+combatlog:
+  message: '[CombatLog] You have been killed for combat logging!'
+
+##################################
+##       REPORT COOLDOWN        ##
+##################################
+
+report:
+  cooldown: 60
+  
+##################################
+##       SPAWN PROTECTION       ##
+##################################
+
+protection:
+  name: Spawn
+  from:
+    x: 0
+    y: 0
+    z: 0
+  to:
+    x: 0
+    y: 0
+    z: 0
+
+##################################
+##       LOGGING OPTIONS        ##
+##################################
+
+# Would you like to put all reports in a file?
+logreport: true

@@ -1,0 +1,16 @@
+name: aBundle
+main: com.advancedpvp.abundle.bundle.aBundle
+version: 0.1
+author: aninsanellama
+
+commands:
+  combatlog:
+    description: Allows staff to handle combatlog features.
+  report:
+    description: Allows players to submit reports to staff.
+  sc:
+    description: Allows staff members to talk to other staff members.
+  schat:
+    description: Allows staff members to talk to other staff members.
+  protect:
+    description: Allows staff members to protect an area of spawn.
