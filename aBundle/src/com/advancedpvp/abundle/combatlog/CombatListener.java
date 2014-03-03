@@ -82,10 +82,16 @@ public class CombatListener implements Listener {
 			}
 			
 			int removeCooldownCnfg = plugin.getConfig().getInt("removal.cooldown"); // 100 ticks = 10 seconds
-			long removeCooldown = removeCooldownCnfg * 20;
-			
+			public long removeCooldown = removeCooldownCnfg * 20;
+			int i = 0;
 			BukkitScheduler sch = Bukkit.getServer().getScheduler();
-			sch.scheduleSyncDelayedTask(plugin, new Runnable() {
+		  	// Don't know if this will work.
+			// Should count down.
+		//	while(i < removeCooldown && spawnSet.contains(p.getName())) {
+		//	  i++
+		//	  removeCooldownCnfg--;
+		//	}
+ 			sch.scheduleSyncDelayedTask(plugin, new Runnable() {
 				
 				@Override
 				public void run() {
